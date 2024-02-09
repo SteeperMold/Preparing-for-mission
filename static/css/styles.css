@@ -5,3 +5,9 @@ h4 {
 p {
     margin-left: 20px;
 }
+
+.form-title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
