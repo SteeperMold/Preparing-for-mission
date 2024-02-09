@@ -11,7 +11,11 @@ def index():
 
 @app.route('/training/<prof>')
 def training(prof):
-    return render_template('')
+    if 'инженер' in prof.lower() or 'строитель' in prof.lower():
+        prof = 'engineering'
+    else:
+        prof = 'science'
+    return render_template('training.html', prof=prof)
 
 
 if __name__ == '__main__':
