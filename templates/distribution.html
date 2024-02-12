@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for name in names %}
+        {% if loop.index == 1 %}
+            <p>{{ name }} - Каюта № {{ loop.index }} - капитан корабля</p>
+        {% else %}
+            <p>{{ name }} - Каюта № {{ loop.index }}</p>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
