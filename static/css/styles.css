@@ -11,3 +11,18 @@ p {
     flex-direction: row;
     margin-left: 20px;
 }
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    width: 50%;
+    height: 20vh;
+}

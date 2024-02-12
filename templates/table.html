@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<table>
+    <tr>
+        <td>Цвет стен</td>
+        <td>Эмблема</td>
+    </tr>
+    <tr>
+        {% if sex == 'female' %}
+            <td style="background-color: {% if age < 21 %}pink{% else %}red{% endif %};"></td>
+            <td><img src="/../static/img/alien_female.png"></td>
+        {% else %}
+            <td style="background-color: {% if age < 21 %}skyblue{% else %}blue{% endif %};"></td>
+            <td><img src="/../static/img/alien_male.png"></td>
+        {% endif %}
+    </tr>
+</table>
+
+{% endblock %}
